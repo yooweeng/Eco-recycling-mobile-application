@@ -1,4 +1,4 @@
-# Eco_Environmental_Application_XMUM
+# Eco_Recycling_Application_XMUM
 
 ## Project Objective
 The objectives for the Eco application:
