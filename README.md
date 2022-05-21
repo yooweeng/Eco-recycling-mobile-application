@@ -36,7 +36,7 @@ The home of adult mode consists of a map function that detects surrounding locat
 
 ## Schedule
 ![image](https://user-images.githubusercontent.com/96167642/169645348-fd889200-0317-471d-9ff3-406550267337.png)
-![image](https://user-images.githubusercontent.com/96167642/169645351-056b6e24-649d-4c17-9fbb-27f0531d7782.png)
+![image](https://user-images.githubusercontent.com/96167642/169662896-ca4f0a88-169c-4850-bf62-287284e0e3e5.png)
 
 The schedule page will display the time of garbage and recycle collection time. It is designed in table form for users to view the time data in a more organized and easily observable manner. There is also a refresh button at the bottom of the schedule table to allow users to refresh the schedule data. The top right corner of the schedule page contains a button that allows the user to navigate into a different page that allows the user to set reminders for the selected time, it is designed in yellow colour to highlight the reminder feature to the user.
 The reminder page contains two recycler views that each contain respective time and switch that allow users to turn on their notification on the date that they wished to receive the remainder. After the switch has been pushed, the colour will be changed to green and a toast will be sent to indicate a reminder set.
