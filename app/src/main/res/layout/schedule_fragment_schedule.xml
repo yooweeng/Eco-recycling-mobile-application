@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/schedule_reminderpage_bg">
+
+    <TextView
+        android:id="@+id/tvScheduleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="98dp"
+        android:text="Schedule"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWorkingDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="19dp"
+        android:text="Working Days"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="390dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvWeekend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkingDay">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="#F6EFAD" />
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Mon" />
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Tue" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Wed" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Thurs" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Fri" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Garbage" />
+
+            <TextView
+                android:id="@+id/tvGarbageMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvGarbageTue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvGarbageWed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvGarbageThurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvGarbageFri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Recycle" />
+
+            <TextView
+                android:id="@+id/tvRecycleMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvRecycleTue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvRecycleWed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvRecycleThurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+            <TextView
+                android:id="@+id/tvRecycleFri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#B8E881" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvWeekend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="22dp"
+        android:text="Weekend"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="392dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeekend">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#F6EFAD"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Sat" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Sun" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Garbage" />
+
+            <TextView
+                android:id="@+id/tvGarbageSat"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#B8E881"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvGarbageSun"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#B8E881"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#489C4B"
+                android:gravity="center"
+                android:text="Recycle" />
+
+            <TextView
+                android:id="@+id/tvRecycleSat"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#B8E881"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvRecycleSun"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#B8E881"
+                android:gravity="center" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="151dp"
+        android:text="refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <ImageView
+        android:id="@+id/ivRefresh"
+        android:layout_width="42dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnRefresh"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:srcCompat="@drawable/ic_baseline_sync_24" />
+
+    <TextView
+        android:id="@+id/tvAutoRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="58dp"
+        android:text="auto refreshing..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefresh" />
+
+    <ImageButton
+        android:id="@+id/imgbtnRemainder"
+        android:layout_width="57dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/notificationreminderbutton_bg"
+        android:backgroundTint="#E4CE06"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toEndOf="@+id/tvWorkingDay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_circle_notifications_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

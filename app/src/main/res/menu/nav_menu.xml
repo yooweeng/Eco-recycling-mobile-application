@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/btnHome"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/btnSchedule"
+            android:icon="@drawable/ic_notification"
+            android:title="Schedule" />
+
+        <item
+            android:id="@+id/btnNews"
+            android:icon="@drawable/ic_map_type"
+            android:title="News" />
+
+        <item
+            android:id="@+id/btnSavedPlaces"
+            android:icon="@drawable/ic_location"
+            android:title="Saved Places" />
+
+        <item
+            android:id="@+id/btnInformation"
+            android:icon="@drawable/ic_info"
+            android:title="Information" />
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/btnContactUs"
+                android:icon="@drawable/ic_phone"
+                android:title="Contact Us" />
+
+            <item
+                android:id="@+id/btnSetting"
+                android:icon="@drawable/ic_setting"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

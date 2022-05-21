@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "611835908872",
+    "firebase_url": "https://ecoapp-9fb04-default-rtdb.firebaseio.com",
+    "project_id": "ecoapp-9fb04",
+    "storage_bucket": "ecoapp-9fb04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611835908872:android:0a156f8cf3d6b0190092bd",
+        "android_client_info": {
+          "package_name": "com.example.nearbyrecyclestationmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611835908872-vumpdem49kce9btj3jvsbo0o1g6qimti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJMZilqnhoAbcA842v_dx-bJ0-q3Oxc0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611835908872-vumpdem49kce9btj3jvsbo0o1g6qimti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

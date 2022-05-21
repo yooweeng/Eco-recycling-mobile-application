@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_nav_child"
+    app:startDestination="@id/btnHomeC">
+
+    <fragment
+        android:id="@+id/btnHomeC"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.ChildFragments.HomeChildFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_child" />
+    <fragment
+        android:id="@+id/btnQuiz"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.ChildFragments.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" >
+
+        <argument
+            android:name="isEndQuiz"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_btnQuiz_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/btnSetting"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_btnSetting_to_emailConfirmationFragment"
+            app:destination="@id/emailConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailConfirmationFragment"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.EmailConfirmationFragment"
+        android:label="fragment_email_confirmation"
+        tools:layout="@layout/fragment_email_confirmation">
+
+        <argument
+            android:name="isPassword"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_emailConfirmationFragment_to_passwordChangeFragment"
+            app:destination="@id/passwordChangeFragment"
+            app:popUpTo="@id/btnSetting" />
+        <action
+            android:id="@+id/action_emailConfirmationFragment_to_emailChangeFragment"
+            app:destination="@id/emailChangeFragment"
+            app:popUpTo="@id/btnSetting" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailChangeFragment"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.EmailChangeFragment"
+        android:label="fragment_email_change"
+        tools:layout="@layout/fragment_email_change" />
+    <fragment
+        android:id="@+id/passwordChangeFragment"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.PasswordChangeFragment"
+        android:label="fragment_password_change"
+        tools:layout="@layout/fragment_password_change" />
+    <fragment
+        android:id="@+id/btnContactUs"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.nearbyrecyclestationmap.Fragments.ChildFragments.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question">
+
+        <argument
+            android:name="isStartQuiz"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_questionFragment_to_btnQuiz"
+            app:destination="@id/btnQuiz" />
+    </fragment>
+</navigation>

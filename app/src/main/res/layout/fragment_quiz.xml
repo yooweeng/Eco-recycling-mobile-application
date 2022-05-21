@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ChildFragments.QuizFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:src="@drawable/quiz_logo"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/btnStart"/>
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:text="Fun Quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:elevation="10dp"
+        android:padding="15dp"
+        android:text="Start"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="30dp" />
+
+
+
+</RelativeLayout>
